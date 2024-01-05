@@ -1,5 +1,7 @@
 :root {
     --opc: .6;
     --clr-ttl: #232536;
-    
+    --clr-org: #ffa155;
+    --clr-bisq: #ffd3af; 
+    --trans: .3s;
 }
