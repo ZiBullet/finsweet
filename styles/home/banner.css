@@ -67,20 +67,71 @@
     line-height: 24px;
     transition: var(--trans);
 }
+
 .main__banner__idea-link:hover {
     background: var(--clr-org);
 }
+
+.main__banner__idea-link img {
+    transition: var(--trans);
+}
+
+.main__banner__idea-link:hover img {
+    transform: translateX(4px);
+}
+
 .main__banner__idea-img {
     position: relative;
     width: 524px;
     height: 632px;
 }
+
 .main__banner__idea-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .main__banner__idea-img-decor {
     position: absolute;
     right: 0;
+}
+
+.main__banner__clients {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.main__banner__clients-desc {
+    max-width: 188px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.main__banner__clients-title-mini {
+    color: rgba(255, 255, 255, var(--opc));
+    font-family: Poppins-Medium, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.main__banner__clients-title {
+    color: #fff;
+    font-family: Poppins-Medium, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.main__banner__clients-companies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

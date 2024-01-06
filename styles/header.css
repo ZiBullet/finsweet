@@ -52,3 +52,9 @@
 .header__nav-links-clone:hover {
     border-bottom: 2px solid var(--clr-bisq);
 }
+.header__nav-links-clone img {
+    transition: var(--trans);
+}
+.header__nav-links-clone:hover img {
+    transform: translateX(4px);
+}
