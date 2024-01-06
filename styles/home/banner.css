@@ -52,6 +52,7 @@
 }
 
 .main__banner__idea-link {
+    position: relative;
     background: var(--clr-blue);
     max-width: 220px;
     width: 100%;
@@ -69,34 +70,84 @@
 }
 
 .main__banner__idea-link:hover {
+    scale: 1.05;
     background: var(--clr-org);
 }
 
-.main__banner__idea-link img {
+.main__banner__idea-link img:first-child {
     transition: var(--trans);
 }
-
-.main__banner__idea-link:hover img {
-    transform: translateX(4px);
+.main__banner__idea-link-decor {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
+.main__banner__idea-link:hover img:first-of-type {
+    transform: translateX(4px);
+} 
 
 .main__banner__idea-img {
+    z-index: 10;
     position: relative;
     width: 524px;
     height: 632px;
 }
 
 .main__banner__idea-img img {
+    position: relative;
+    z-index: 2;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    animation: move-sides 4s ease infinite;
 }
 
 .main__banner__idea-img-decor {
+    z-index: 1;
     position: absolute;
-    right: 0;
+}
+.main__banner__idea-img-decor-line:first-child {
+    background: var(--clr-org);
+}
+.main__banner__idea-img-decor-line:nth-child(2) {
+    background: var(--clr-bisq);
+}
+.main__banner__idea-img-decor-line:last-child {
+    background: var(--clr-blue);
+}
+.main__banner__idea-img-decor:first-of-type {
+    bottom: 0;
+    left: -16px;
+}
+.main__banner__idea-img-decor:first-of-type .main__banner__idea-img-decor-line:first-child {
+    height: 22px;
+    width: 32px;
+}
+.main__banner__idea-img-decor:first-of-type .main__banner__idea-img-decor-line:nth-child(2) {
+    height: 64px;
+    width: 32px;
+}
+.main__banner__idea-img-decor:first-of-type .main__banner__idea-img-decor-line:last-child {
+    width: 32px;
+    height: 16px;
 }
 
+.main__banner__idea-img-decor:last-of-type {
+    top: 0;
+    right: -16px;
+}
+.main__banner__idea-img-decor:last-of-type .main__banner__idea-img-decor-line:nth-child(2) {
+    width: 222px;
+    height: 200px;
+}
+.main__banner__idea-img-decor:last-of-type .main__banner__idea-img-decor-line:first-child {
+    height: 75px;
+    width: 222px;
+}
+.main__banner__idea-img-decor:last-of-type .main__banner__idea-img-decor-line:last-child {
+    height: 46px;
+    width: 222px;
+} 
 .main__banner__clients {
     width: 100%;
     display: flex;
@@ -134,4 +185,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@keyframes move-sides {
+    0% {
+        transform: translateX(16px);
+    }
+    50% {
+        transform: translateX(-16px);
+    }
+    100% {
+        transform: translateX(16px);
+    }
 }
