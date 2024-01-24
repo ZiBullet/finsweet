@@ -34,9 +34,9 @@
 
 .main__banner__idea-desc-title {
     color: #fff;
-    font-size: 56px;
+    font-family: var(--PS);
+    font-size: clamp(1.625rem, 1.019rem + 3.03vw, 3.5rem);
     font-weight: 600;
-    line-height: 68px;
     margin-bottom: 24px;
 }
 
@@ -44,10 +44,9 @@
     max-width: 528px;
     width: 100%;
     color: rgba(255, 255, 255, var(--opc));
-    font-family: Poppins-Regular, sans-serif;
+    font-family: var(--PR);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
     margin-bottom: 32px;
 }
 
@@ -89,17 +88,20 @@
 .main__banner__idea-img {
     z-index: 10;
     position: relative;
-    width: 524px;
-    height: 632px;
+    max-width: 524px;
+    width: 100%;
+    max-height: 632px;
+    
 }
 
 .main__banner__idea-img img {
     position: relative;
+    right: 16px;
     z-index: 2;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: move-sides 4s ease infinite;
+    /* animation: move-sides 4s ease infinite; */
 }
 
 .main__banner__idea-img-decor {
@@ -117,7 +119,7 @@
 }
 .main__banner__idea-img-decor:first-of-type {
     bottom: 0;
-    left: -16px;
+    left: -32px;
 }
 .main__banner__idea-img-decor:first-of-type .main__banner__idea-img-decor-line:first-child {
     height: 22px;
@@ -134,7 +136,7 @@
 
 .main__banner__idea-img-decor:last-of-type {
     top: 0;
-    right: -16px;
+    right: 0;
 }
 .main__banner__idea-img-decor:last-of-type .main__banner__idea-img-decor-line:nth-child(2) {
     width: 222px;
@@ -195,5 +197,30 @@
     }
     100% {
         transform: translateX(16px);
+    }
+}
+@media screen and (max-width: 1140px) {
+    .main__banner {
+        height: max-content;
+    }
+    .main__banner__idea {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .main__banner__idea-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .main__banner__idea-desc-dot {
+        display: none;
+    }
+    .main__banner__idea-img img {
+        left: 0;
+    }
+    .main__banner__idea-img-decor {
+        display: none;
     }
 }
