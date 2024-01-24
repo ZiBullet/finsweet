@@ -18,7 +18,7 @@
 }
 
 .main__about__desc-title-mini {
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -35,6 +35,7 @@
 .main__about__desc-title-block-title {
     max-width: 640px;
     width: 100%;
+    font-family: var(--PS);
     color: var(--clr-ttl);
     font-size: 48px;
     font-weight: 600;
@@ -59,7 +60,7 @@
 
 .main__about__desc-title-block-desc-text {
     color: #5d5f6d;
-    font-family: Poppins-Regular, sans-serif;
+    font-family: var(--PR);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -156,7 +157,7 @@
 }
 
 .main__about__content-read-stats-card-text {
-    font-family: Poppins-Regular, sans-serif;
+    font-family: var(--PR);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -167,7 +168,7 @@
     align-items: center;
     gap: 16px;
     color: var(--clr-blue);
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;

@@ -62,7 +62,7 @@
     justify-content: center;
     gap: 16px;
     color: #fff;
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -166,7 +166,7 @@
 
 .main__banner__clients-title-mini {
     color: rgba(255, 255, 255, var(--opc));
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -174,7 +174,7 @@
 
 .main__banner__clients-title {
     color: #fff;
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;

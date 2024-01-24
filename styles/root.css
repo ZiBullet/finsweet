@@ -1,4 +1,8 @@
 :root {
+    --PS: Poppins-SemiBold, sans-serif;
+    --PR: Poppins-Regular, sans-serif;
+    --PM: Poppins-Medium, sans-serif;
+
     --opc: .6;
     --clr-ttl: #232536;
     --clr-org: #ffa155;
