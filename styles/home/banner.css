@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    margin-bottom: 58px;
+    gap: 32px;
 }
 
 .main__banner__idea {
@@ -101,7 +101,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* animation: move-sides 4s ease infinite; */
+    animation: move-sides 4s ease infinite;
 }
 
 .main__banner__idea-img-decor {
@@ -154,7 +154,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .main__banner__clients-desc {
@@ -183,10 +185,9 @@
 }
 
 .main__banner__clients-companies {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 @keyframes move-sides {
     0% {
@@ -219,8 +220,18 @@
     }
     .main__banner__idea-img img {
         left: 0;
+        animation: none;
     }
     .main__banner__idea-img-decor {
         display: none;
+    }
+    .main__banner__clients {
+        justify-content: center;
+    }
+    .main__banner__clients-desc {
+        align-items: center;
+    }
+    .main__banner__clients-companies {
+        justify-content: center;
     }
 }
