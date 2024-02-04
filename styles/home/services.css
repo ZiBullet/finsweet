@@ -17,19 +17,18 @@
 }
 
 .main__services__desc-title-mini {
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
     letter-spacing: 3px;
     margin-bottom: 12px;
 }
 
 .main__services__desc-title {
+    font-family: var(--PS);
     color: var(--clr-ttl);
-    font-size: 48px;
+    font-size: var(--ttl-size);
     font-weight: 600;
-    line-height: 58px;
     margin-bottom: 40px;
 }
 
@@ -43,10 +42,9 @@
     justify-content: center;
     gap: 16px;
     color: rgba(255, 255, 255, .78);
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
     background: var(--clr-blue);
     transition: var(--trans);
 }
@@ -79,8 +77,9 @@
 }
 
 .main__services__cards-card {
-    width: 405px;
-    height: 335px;
+    max-width: 405px;
+    width: 100%;
+    max-height: 335px;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -105,18 +104,17 @@
 }
 
 .main__services__cards-card-title {
+    font-family: var(--PS);
     font-size: 16px;
     font-weight: 600;
-    line-height: 28px;
     margin-bottom: 8px;
 }
 
 .main__services__cards-card-text {
     color: #5d5f6d;
-    font-family: Poppins-Regular, sans-serif;
+    font-family: var(--PR);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
     margin-bottom: 24px;
 }
 
@@ -125,10 +123,9 @@
     align-items: center;
     gap: 12px;
     color: var(--clr-blue);
-    font-family: Poppins-Medium, sans-serif;
+    font-family: var(--PM);
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
     border-bottom: 1px solid transparent;
     transition: var(--trans);
 }
@@ -140,4 +137,29 @@
 }
 .main__services__cards-card-link:hover img {
     transform: translateX(4px);
+}
+@media screen and (max-width: 1280px) {
+    .main__services {
+        padding: 30px 0;
+        height: max-content;
+    }
+    .main__services__wrap {
+        align-items: center;
+    }
+    .main__services__desc {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__services__cards {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .main__services__cards-card {
+        padding: 15px;
+    }
 }
