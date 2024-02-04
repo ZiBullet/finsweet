@@ -3,6 +3,7 @@
     --PR: Poppins-Regular, sans-serif;
     --PM: Poppins-Medium, sans-serif;
 
+    --ttl-size: clamp(1.25rem, 0.684rem + 2.83vw, 3rem);
     --opc: .6;
     --clr-ttl: #232536;
     --clr-org: #ffa155;

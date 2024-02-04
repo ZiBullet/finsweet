@@ -18,16 +18,15 @@
     font-family: var(--PM);
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
     letter-spacing: 3px;
     margin-bottom: 16px;
 }
 
 .main__expertise__desc-title {
+    font-family: var(--PS);
     color: var(--clr-ttl);
-    font-size: 48px;
+    font-size: var(--ttl-size);
     font-weight: 600;
-    line-height: 58px;
     margin-bottom: 24px;
 }
 
@@ -42,7 +41,6 @@
 .main__expertise__features {
     max-width: 515px;
     width: 100%;
-    height: 444px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -151,5 +149,19 @@
     100% {
         left: 0;
         background: var(--clr-org);
+    }
+}
+@media screen and (max-width: 1280px) {
+    .main__expertise {
+        height: max-content;
+        padding: 30px 0;
+    }
+    .main__expertise__wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main__expertise__desc {
+        text-align: center;
+        justify-content: center;
     }
 }
