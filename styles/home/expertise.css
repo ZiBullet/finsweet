@@ -14,22 +14,6 @@
     width: 100%;
 }
 
-.main__expertise__desc-title-mini {
-    font-family: var(--PM);
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    margin-bottom: 16px;
-}
-
-.main__expertise__desc-title {
-    font-family: var(--PS);
-    color: var(--clr-ttl);
-    font-size: var(--ttl-size);
-    font-weight: 600;
-    margin-bottom: 24px;
-}
-
 .main__expertise__desc-text {
     color: #5d5f6d;
     font-family: var(--PR);

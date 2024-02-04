@@ -36,10 +36,6 @@
 .main__about__desc-title-block-title {
     max-width: 640px;
     width: 100%;
-    font-family: var(--PS);
-    color: var(--clr-ttl);
-    font-size: var(--ttl-size);
-    font-weight: 600;
 }
 
 .main__about__desc-title-block-desc {

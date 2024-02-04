@@ -170,10 +170,6 @@
 
 .main__banner__clients-title-mini {
     color: rgba(255, 255, 255, var(--opc));
-    font-family: var(--PM);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
 }
 
 .main__banner__clients-title {
